@@ -1,0 +1,2904 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.special-text {
+  color: #e3b873;
+}
+
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("./assets/fonts/FuturaBookRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "YesevaOne";
+  src: url("./assets/fonts/YesevaOne-Regular.ttf") format("truetype");
+}
+
+.section-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-head__title {
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.section-head__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 13px;
+}
+
+.section-head__logo img:nth-child(odd) {
+  width: 32px;
+  height: 5px;
+  margin: 0 8px;
+}
+
+.section-head__text {
+  margin-top: 25px;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
+}
+
+.list-of-jobs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-of-jobs--item + li {
+  margin-left: 30px;
+}
+
+.list-of-jobs--item {
+  position: relative;
+  width: 392px;
+  height: 580px;
+  margin-bottom: 90px;
+}
+
+.list-of-jobs--item__img {
+  position: absolute;
+  width: 100%;
+}
+
+.list-of-jobs--item__img img {
+  width: 100%;
+}
+
+.list-of-jobs--item__info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 330px;
+  top: 50%;
+  left: 30px;
+  padding-top: 25px;
+  padding-left: 35px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  position: absolute;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.list-of-jobs--item__title {
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #363636;
+}
+
+.list-of-jobs--item__list {
+  padding-top: 15px;
+  padding-left: 20px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+
+.list-of-jobs--item__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  font-family: "FuturaBookC";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  width: 230px;
+  height: 55px;
+  color: #fff;
+  position: absolute;
+  bottom: -27px;
+}
+
+.list-of-jobs--item__button:hover {
+  -webkit-box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+  background: #eecb94;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .list-of-jobs--item + li {
+    margin-left: 0;
+  }
+  .list-of-jobs--item__info {
+    left: 0;
+  }
+  .list-of-jobs--item__title {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  .list-of-jobs--item__list {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  .list-of-jobs--item__button {
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form__label {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form__input {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  border-bottom: 1px solid #3636364d;
+  color: #fff;
+  background-color: #131313;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__input::placeholder {
+  color: #fff;
+}
+
+.form__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  font-family: "FuturaBookC";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+  color: #fff;
+}
+
+.form__submit:hover {
+  -webkit-box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+  background: #eecb94;
+  cursor: pointer;
+}
+
+.form--checkbox-container {
+  display: block;
+  position: relative;
+  padding-top: 3px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "FuturaBookC";
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.form--checkbox-container .checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form--checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.form--checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.form--checkbox-container input:checked ~ .checkmark {
+  background-color: #E3B873;
+}
+
+.form--checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form--checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form--checkbox-container .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form__checkbox-label {
+  font-family: "FuturaBookC";
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.main {
+  height: 100vh;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main--header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "FuturaBookC";
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main--header__logo {
+  width: 275px;
+  min-width: 175px;
+}
+
+.main--header__nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main--header__nav .list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.main--header__nav .list .item:hover {
+  cursor: pointer;
+}
+
+.main--header__nav .list .item + .item {
+  margin-left: 10px;
+}
+
+.main--header__phone {
+  width: 230px;
+  min-width: 127px;
+  text-align: center;
+}
+
+.main--header__call-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  font-family: "FuturaBookC";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  width: 161px;
+  height: 31px;
+}
+
+.main--header__call-btn:hover {
+  -webkit-box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+  background: #eecb94;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .main--header {
+    height: 55px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: 576px) {
+  .main--header {
+    height: 85px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main--header {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main--header__nav {
+    display: none;
+  }
+  .main--header__call-btn {
+    display: none;
+  }
+  .main--header__phone {
+    width: 135px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .main--header {
+    padding-left: 83px;
+    padding-right: 100px;
+  }
+}
+
+.main--content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main--instagram {
+  width: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main--instagram__title {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main--instagram__title a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.main--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url(./assets/img/main-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0 18px;
+}
+
+.main--content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.main--content--content-wrapper {
+  z-index: 2;
+}
+
+.main--content__title {
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.main--content__text {
+  font-family: "FuturaBookC";
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+}
+
+.main--content--buttons {
+  font-family: "FuturaBookC";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.main--content__calculate-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  font-family: "FuturaBookC";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 51px;
+}
+
+.main--content__calculate-btn:hover {
+  -webkit-box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+  background: #eecb94;
+  cursor: pointer;
+}
+
+.main--content__submit-app-btn_clear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  font-family: "FuturaBookC";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 51px;
+  outline: 2px solid #fff;
+  background: none;
+}
+
+.main--content__submit-app-btn_clear:hover {
+  -webkit-box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+  background: #eecb94;
+  cursor: pointer;
+}
+
+.main--scroll-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background-color: #131313;
+  width: 247px;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 3;
+}
+
+.main--scroll-down__img {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .main--scroll-down {
+    display: none;
+  }
+  .main--instagram {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .main--content--content-wrapper {
+    max-width: 550px;
+    margin-left: 15px;
+  }
+  .main--content__title {
+    font-size: 40px;
+    line-height: 53px;
+  }
+  .main--content__text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .main--content--buttons {
+    max-width: 434px;
+  }
+  .main--content__calculate-btn {
+    width: 207px;
+    margin-bottom: 26px;
+  }
+  .main--content__submit-app-btn_clear {
+    width: 207px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main--content__title {
+    font-size: 25px;
+    line-height: 133%;
+  }
+  .main--content__text {
+    font-size: 18px;
+    line-height: 136%;
+  }
+  .main--content--buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: none;
+  }
+  .main--content__calculate-btn {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+  .main--content__submit-app-btn_clear {
+    width: 100%;
+  }
+}
+
+.projects {
+  background-color: #131313;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.projects .inner {
+  padding-top: 105px;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 640px;
+}
+
+.projects--description-wrapper {
+  max-width: 460px;
+  padding-right: 10px;
+  margin-top: 75px;
+}
+
+.projects--description-wrapper__title {
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  width: 265px;
+}
+
+.projects--description-wrapper__title .special-text {
+  margin-right: 25px;
+}
+
+.projects--description-wrapper__title img {
+  margin-bottom: 8px;
+}
+
+.projects--description-wrapper__text {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 29px;
+  color: #fff;
+  margin-top: 35px;
+}
+
+.projects--info-wrapper {
+  max-width: 460px;
+  margin-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects--info-wrapper__city {
+  min-width: 150px;
+}
+
+.projects--info-wrapper__area {
+  min-width: 150px;
+}
+
+.projects--info-wrapper__time {
+  min-width: 150px;
+}
+
+.projects--info-wrapper__cost {
+  min-width: 150px;
+}
+
+.projects--info-wrapper__slider-controller {
+  margin-top: 10px;
+  min-width: 206px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.projects--info-wrapper__right-btn, .projects--info-wrapper__left-btn:hover {
+  cursor: pointer;
+}
+
+.projects--info-wrapper__list-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.projects--info-wrapper__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects--info-wrapper__list .item {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.projects--info-wrapper__list .active {
+  background-color: #fff;
+}
+
+.projects--info-wrapper__title {
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.projects--info-wrapper__text {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.projects--slider-wrapper {
+  height: 700px;
+  width: calc(100% - 470px);
+}
+
+.projects--slider-wrapper--name-wrapper {
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.projects--slider-wrapper--name-wrapper .list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 655px;
+}
+
+.projects--slider-wrapper--name-wrapper .list .item {
+  list-style: none;
+}
+
+.projects--slider-wrapper--name-wrapper .list .active {
+  border-bottom: 1px solid #e3b873;
+  padding-bottom: 2px;
+}
+
+.projects--slider-wrapper--image-wrapper {
+  margin-top: 53px;
+  position: relative;
+}
+
+.projects--slider-wrapper--image-wrapper .list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects--slider-wrapper--image-wrapper .list .item {
+  list-style: none;
+}
+
+.projects--slider-wrapper--image-wrapper .list .item + .item {
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.projects--slider-wrapper--image-wrapper .control-btn {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: calc(50% - 42px);
+}
+
+.projects--slider-wrapper--image-wrapper .control-btn .left-btn {
+  cursor: pointer;
+  visibility: hidden;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.projects--slider-wrapper--image-wrapper .control-btn .right-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .projects .inner {
+    padding-top: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 100%;
+  }
+  .projects--description-wrapper {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .projects--description-wrapper__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 138.6%;
+    width: 250px;
+  }
+  .projects--description-wrapper__title .special-text {
+    margin: 0;
+  }
+  .projects--description-wrapper__title img {
+    display: none;
+  }
+  .projects--description-wrapper__text {
+    font-size: 16px;
+    line-height: 158.48%;
+    margin-top: 22px;
+  }
+  .projects--info-wrapper {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 36px;
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+  .projects--info-wrapper__slider-controller {
+    display: none;
+  }
+  .projects--info-wrapper__text {
+    margin-bottom: 27px;
+  }
+  .projects--slider-wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    height: 100%;
+  }
+  .projects--slider-wrapper--name-wrapper {
+    display: none;
+  }
+  .projects--slider-wrapper--image-wrapper {
+    margin-top: 36px;
+  }
+  .projects--slider-wrapper--image-wrapper .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects--slider-wrapper--image-wrapper .list .item img {
+    width: 100%;
+  }
+  .projects--slider-wrapper--image-wrapper .list .item:first-child {
+    display: none;
+  }
+  .projects--slider-wrapper--image-wrapper .list .item + .item {
+    overflow: visible;
+    margin: 0;
+  }
+  .projects--slider-wrapper--image-wrapper .control-btn {
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    top: calc(50% - 18px);
+  }
+  .projects--slider-wrapper--image-wrapper .control-btn .left-btn {
+    cursor: pointer;
+    visibility: visible;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    width: 36px;
+  }
+  .projects--slider-wrapper--image-wrapper .control-btn .right-btn {
+    cursor: pointer;
+    width: 36px;
+  }
+}
+
+.online-control {
+  height: 100%;
+}
+
+.online-control--part-1 {
+  height: 200px;
+  background-color: #131313;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.online-control--part-1 .background-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0.05;
+}
+
+.online-control--part-1 .background-img .img {
+  height: 100%;
+}
+
+.online-control--part-1 .inner {
+  position: absolute;
+  width: 820px;
+  left: calc(50% - 410px);
+}
+
+.online-control--content__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.online-control--content__video {
+  margin-top: 30px;
+}
+
+.online-control--content__video .video {
+  height: 435px;
+  width: 815px;
+  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.online-control--content__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+.online-control--content__description img {
+  width: 55px;
+}
+
+.online-control--content__description .text {
+  margin-top: 35px;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
+}
+
+.online-control--content__form {
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.online-control--content__form .name__label {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.online-control--content__form .name__input {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  width: 230px;
+  border: none;
+  border-bottom: 1px solid #3636364d;
+  color: #363636;
+}
+
+.online-control--content__form .phone {
+  margin-left: 60px;
+}
+
+.online-control--content__form .phone__label {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(54, 54, 54, 0.5);
+}
+
+.online-control--content__form .phone__input {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  width: 230px;
+  border: none;
+  border-bottom: 1px solid #3636364d;
+  color: #363636;
+}
+
+.online-control--content__form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  font-family: "FuturaBookC";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  height: 50px;
+  width: 200px;
+  color: #fff;
+}
+
+.online-control--content__form .submit:hover {
+  -webkit-box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+  background: #eecb94;
+  cursor: pointer;
+}
+
+.online-control--content__form .agreement {
+  margin-top: 35px;
+  font-family: "FuturaBookC";
+  font-size: 16px;
+  line-height: 22px;
+  color: #181818;
+}
+
+@media (max-width: 1199px) {
+  .online-control--part-1 .background-img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .online-control {
+    height: 880px;
+  }
+  .online-control--part-1 {
+    height: 100%;
+  }
+  .online-control--part-1 .background-img {
+    display: none;
+  }
+  .online-control .inner {
+    position: relative;
+    width: 100%;
+    margin-top: 55px;
+    left: 0;
+  }
+  .online-control--content {
+    padding: 0 18px;
+  }
+  .online-control--content__video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .online-control--content__video .video {
+    height: 205px;
+    width: 340px;
+  }
+  .online-control--content__description {
+    margin-top: 30px;
+  }
+  .online-control--content__description .text {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 169.8%;
+  }
+  .online-control--content__form {
+    margin-top: 60px;
+  }
+  .online-control--content__form .name {
+    width: 100%;
+  }
+  .online-control--content__form .name__label {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .online-control--content__form .name__input {
+    width: 100%;
+    background-color: #131313;
+    color: #fff;
+    border-bottom-color: rgba(173, 169, 169, 0.3);
+  }
+  .online-control--content__form .name__input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  .online-control--content__form .name__input:-ms-input-placeholder {
+    color: #fff;
+  }
+  .online-control--content__form .name__input::-ms-input-placeholder {
+    color: #fff;
+  }
+  .online-control--content__form .name__input::placeholder {
+    color: #fff;
+  }
+  .online-control--content__form .phone {
+    margin-left: 0;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .online-control--content__form .phone__label {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .online-control--content__form .phone__input {
+    width: 100%;
+    background-color: #131313;
+    color: #fff;
+    border-bottom-color: rgba(173, 169, 169, 0.3);
+  }
+  .online-control--content__form .phone__input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  .online-control--content__form .phone__input:-ms-input-placeholder {
+    color: #fff;
+  }
+  .online-control--content__form .phone__input::-ms-input-placeholder {
+    color: #fff;
+  }
+  .online-control--content__form .phone__input::placeholder {
+    color: #fff;
+  }
+  .online-control--content__form .submit {
+    width: 100%;
+    margin-left: 0;
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: absolute;
+    top: 97%;
+  }
+  .online-control--content__form .agreement {
+    margin-top: 35px;
+    font-family: "FuturaBookC";
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+  }
+}
+
+.online-control--part-2 {
+  height: 800px;
+  background-color: #fff;
+}
+
+.types {
+  padding-top: 145px;
+  padding-bottom: 180px;
+  background-color: #fff;
+}
+
+.types .section-head__title {
+  color: #181818;
+}
+
+.types .inner {
+  padding: 0 15px;
+}
+
+.types .list-of-jobs {
+  padding-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .types {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .types {
+    padding-bottom: 55px;
+  }
+}
+
+.request {
+  background-color: #fff;
+  height: 800px;
+}
+
+.request .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 80px;
+}
+
+.request .steps-wrapper {
+  position: relative;
+  width: 900px;
+  height: 636px;
+}
+
+.request .steps-wrapper__circle-bg {
+  position: absolute;
+  width: 500px;
+}
+
+.request .steps-wrapper__circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+.request .steps-wrapper--step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.request .steps-wrapper--step__number {
+  width: 35px;
+  height: 35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 5px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #E3B873;
+  vertical-align: middle;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.request .steps-wrapper--step__text {
+  max-width: 365px;
+  font-family: "FuturaMediumC";
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+}
+
+.request .steps-wrapper--step_position-1 {
+  position: absolute;
+  left: 340px;
+  top: 45px;
+}
+
+.request .steps-wrapper--step_position-2 {
+  position: absolute;
+  left: 400px;
+  top: 135px;
+}
+
+.request .steps-wrapper--step_position-3 {
+  position: absolute;
+  left: 420px;
+  top: 263px;
+}
+
+.request .steps-wrapper--step_position-4 {
+  position: absolute;
+  left: 365px;
+  top: 388px;
+}
+
+.request .form-wrapper {
+  width: 505px;
+  height: 100%;
+}
+
+.request .form-wrapper .form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 50px;
+  background-color: #131313;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.request .form-wrapper .form__input {
+  width: 100%;
+}
+
+.request .form-wrapper .form__title {
+  margin-bottom: 30px;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.request .form-wrapper .form--name {
+  margin-bottom: 40px;
+}
+
+.request .form-wrapper .form--phone {
+  margin-bottom: 40px;
+}
+
+.request .form-wrapper .form--email {
+  margin-bottom: 10px;
+}
+
+.request .form-wrapper .form--checkbox-container {
+  margin-bottom: 40px;
+}
+
+.request .form-wrapper .form__submit {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.request .form-wrapper--discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.request .form-wrapper--discount__logo {
+  width: 72px;
+  height: 72px;
+  background-color: #E3B873;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.request .form-wrapper--discount__logo .img {
+  margin: 17px;
+}
+
+.request .form-wrapper--discount__title {
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  width: 250px;
+}
+
+@media (max-width: 1200px) {
+  .request {
+    display: none;
+  }
+}
+
+.realize {
+  background-image: url(./assets/img/realize-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 865px;
+}
+
+.realize::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.realize .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.realize--info {
+  width: 30%;
+  margin: auto auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.realize--info__title {
+  width: 310px;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.realize--info__list {
+  margin-top: 45px;
+  margin-left: 0;
+  padding: 0;
+  font-family: "ProximaNova";
+  font-size: 20px;
+  line-height: 34px;
+  list-style: none;
+  color: #fff;
+}
+
+.realize--info__list .item + .item {
+  margin-top: 15px;
+}
+
+.realize--info__list .active {
+  border-bottom: 1px solid #e3b873;
+  padding-bottom: 2px;
+  color: #E3B873;
+}
+
+.realize--images {
+  width: 60%;
+  position: relative;
+}
+
+.realize--images .img-1 {
+  position: absolute;
+  left: 0;
+  top: -30px;
+}
+
+.realize--images .img-2 {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+}
+
+.realize--images .img-3 {
+  position: absolute;
+  left: 385px;
+  top: -100px;
+}
+
+.realize--images .img-4 {
+  position: absolute;
+  left: 385px;
+  bottom: 45px;
+}
+
+.realize--slider-wrapper {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .realize {
+    background-image: none;
+    background-color: #131313;
+    height: 100%;
+  }
+  .realize .inner {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .realize::before {
+    content: none;
+  }
+  .realize--info {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  .realize--info__title {
+    margin: 0 auto 25px auto;
+    text-align: center;
+  }
+  .realize--info__list {
+    display: none;
+  }
+  .realize--images {
+    display: none;
+  }
+  .realize--slider-wrapper {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+  .realize--slider-wrapper__part-1 {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+  }
+  .realize--slider-wrapper__slider {
+    position: relative;
+    padding: 5%;
+    z-index: 1;
+  }
+  .realize--slider-wrapper__slider .img {
+    width: 100%;
+  }
+  .realize--slider-wrapper__controller {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: calc(50% - 40px);
+  }
+  .realize--slider-wrapper__controller .left-btn,
+  .realize--slider-wrapper__controller .right-btn {
+    cursor: pointer;
+  }
+  .realize--slider-wrapper__controller .left-btn img {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.design {
+  background-color: #fff;
+  height: 100%;
+}
+
+.design .inner {
+  padding-top: 110px;
+  height: 100%;
+  position: relative;
+}
+
+.design .section-head__title {
+  color: #181818;
+}
+
+.design .section-head__text {
+  max-width: 750px;
+}
+
+.design--content {
+  padding-top: 40px;
+  position: relative;
+}
+
+.design--content .list-of-jobs {
+  position: relative;
+  z-index: 2;
+}
+
+.design--content .list-of-jobs--item__button {
+  margin-left: 0;
+  left: 0;
+}
+
+.design--content--part-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #131313;
+  z-index: 0;
+}
+
+.design--part-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2% 5%;
+  background-color: #131313;
+}
+
+.design--part-2__description {
+  margin-bottom: 20px;
+  font-family: "FuturaDemiC";
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.design--part-2__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.design--part-2__title .title {
+  width: 180px;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.design--part-2__title img {
+  padding-top: 35px;
+}
+
+.design--part-2__subtitle {
+  width: 250px;
+  margin-bottom: 15px;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.design--part-2__text {
+  width: 350px;
+  margin-bottom: 60px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.design--part-2__slider-controller {
+  margin-top: 10px;
+  min-width: 206px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.design--part-2__right-btn, .design--part-2__left-btn:hover {
+  cursor: pointer;
+}
+
+.design--part-2__list-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.design--part-2__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.design--part-2__list .item {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.design--part-2__list .active {
+  background-color: #fff;
+}
+
+.design--part-2--slider-wrapper {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.design--part-2--slider-wrapper__names-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.design--part-2--slider-wrapper__names-list .name {
+  margin-bottom: 35px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 18px;
+  color: #8b8b8b;
+}
+
+.design--part-2--slider-wrapper__names-list .name__title {
+  width: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e3b873;
+  padding-bottom: 2px;
+}
+
+.design--part-2--slider-wrapper__names-list .name__text {
+  width: 130px;
+}
+
+.design--part-2--slider-wrapper__names-list .active {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .design {
+    background-color: #131313;
+    padding-bottom: 0;
+  }
+  .design .inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .design .section-head__title {
+    color: #fff;
+  }
+  .design .section-head__text {
+    color: #fff;
+  }
+  .design--part-2 {
+    display: none;
+  }
+}
+
+.team {
+  background-color: #131313;
+}
+
+.team .inner {
+  padding-top: 90px;
+}
+
+.team .section-head__text {
+  max-width: 450px;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.team .list-of-jobs {
+  position: relative;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.team .list-of-jobs--item {
+  z-index: 1;
+  width: 272px;
+  height: 400px;
+  margin-bottom: 145px;
+}
+
+.team .list-of-jobs--item__logo {
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+          box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+  padding-top: 12px;
+  padding-left: 12px;
+  z-index: 2;
+}
+
+.team .list-of-jobs--item__list {
+  list-style: none;
+  padding: 0;
+  padding-top: 5px;
+}
+
+.team .list-of-jobs--item__info {
+  text-align: center;
+  width: 80%;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  left: 10%;
+  top: 80%;
+}
+
+.team .list-of-jobs--item__button {
+  margin: 0;
+  left: 0;
+  width: 100%;
+}
+
+.team--content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.team--content--part-2 {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 0;
+}
+
+.team .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.team .description img {
+  width: 55px;
+}
+
+.team .description .text {
+  margin-top: 35px;
+  max-width: 600px;
+  font-family: "FuturaBookC";
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
+}
+
+@media (max-width: 576px) {
+  .team .inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .team .section-head__text {
+    font-size: 15px;
+    line-height: 135.84%;
+  }
+  .team--content--part-2 {
+    background-color: #131313;
+  }
+  .team .description {
+    display: none;
+  }
+}
+
+.clients {
+  background-color: #fff;
+}
+
+.clients .inner {
+  padding: 90px 70px 0;
+}
+
+.clients .section-head__title {
+  color: #181818;
+}
+
+.clients .section-head__text {
+  width: 400px;
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+.clients__list .item {
+  min-width: 300px;
+  max-width: 25%;
+  padding-bottom: 20px;
+}
+
+.clients__list .item--head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients__list .item--head__img {
+  margin-right: 20px;
+}
+
+.clients__list .item--head__img img {
+  border-radius: 50%;
+}
+
+.clients__list .item--head__name {
+  width: 180px;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.clients__list .item__text {
+  padding-top: 10px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 180%;
+  color: #959595;
+}
+
+.clients__list .item--buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.clients__list .item--buttons__volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  font-family: "FuturaBookC";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 120px;
+  height: 55px;
+  margin-right: 1px;
+}
+
+.clients__list .item--buttons__volume:hover {
+  -webkit-box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+  background: #eecb94;
+  cursor: pointer;
+}
+
+.clients__list .item--buttons__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  font-family: "FuturaBookC";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 150px;
+  height: 55px;
+}
+
+.clients__list .item--buttons__time:hover {
+  -webkit-box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 25px rgba(227, 184, 115, 0.3);
+  background: #eecb94;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .clients {
+    display: none;
+  }
+}
+
+.questions--part-1 {
+  background-color: #fff;
+  height: 300px;
+  position: relative;
+  z-index: 5;
+  padding: 0 10px;
+}
+
+.questions--part-1 .background-img {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0.05;
+}
+
+.questions--part-1 .background-img .img {
+  height: 100%;
+}
+
+.questions--form-wrapper {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  width: 60%;
+  padding: 35px 0;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.questions--form-wrapper .form {
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questions--form-wrapper .form__title {
+  min-width: 100%;
+  margin-bottom: 45px;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.questions--form-wrapper .form__input {
+  width: 100%;
+}
+
+.questions--form-wrapper .form--name {
+  min-width: 45%;
+}
+
+.questions--form-wrapper .form--phone {
+  min-width: 45%;
+}
+
+.questions--form-wrapper .form--question {
+  margin-top: 45px;
+  min-width: 100%;
+}
+
+.questions--form-wrapper .form--center {
+  margin-top: 45px;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions--form-wrapper .form__submit {
+  margin-top: 45px;
+}
+
+.questions--part-2 {
+  background-image: url("./assets/img/question-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 0 10px;
+}
+
+.questions--part-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.questions--part-2--content {
+  position: relative;
+  padding-top: 300px;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions--part-2--title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.questions--part-2--title-wrapper .title {
+  max-width: 550px;
+  font-family: "YesevaOne";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.questions--part-2--title-wrapper .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70px;
+  margin-top: 25px;
+}
+
+.questions--part-2--title-wrapper .social-links div {
+  width: 28px;
+  height: 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 6px;
+  padding-left: 6px;
+  border-radius: 50%;
+  background-color: #E3B873;
+}
+
+.questions--part-2--map {
+  margin-top: 45px;
+  margin-bottom: 65px;
+}
+
+.questions--part-2--map img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .questions--form-wrapper {
+    width: 90%;
+    left: 5%;
+  }
+  .questions--form-wrapper .form--name {
+    min-width: 100%;
+    margin-bottom: 45px;
+  }
+  .questions--form-wrapper .form--phone {
+    min-width: 100%;
+  }
+  .questions--part-2--content {
+    padding-top: 380px;
+  }
+}
+
+@media (max-width: 992px) {
+  .questions--form-wrapper {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .questions .background-img {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .questions--part-1 {
+    background-color: #131313;
+  }
+  .questions--form-wrapper {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .questions--form-wrapper .form {
+    width: 100%;
+  }
+  .questions--form-wrapper .form--checkbox-container {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .questions--form-wrapper .form__submit {
+    width: 100%;
+  }
+  .questions--part-2 {
+    background: none;
+    background-color: #131313;
+  }
+  .questions--part-2--content {
+    padding-top: 220px;
+  }
+  .questions--part-2::before {
+    content: none;
+  }
+  .questions--part-2--title-wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 40px;
+  }
+}
+
+.footer {
+  background-color: #131313;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
