@@ -3,8 +3,9 @@
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  // display: none;
 }
+
+$sm-size: 375px;
 
 .header {
   background-color: #374458;
@@ -35,14 +36,14 @@
 
     &__name {
       color: #fff;
-      font-size: 2rem;
+      font-size: 2em;
     }
 
     &__github {
       a {
         text-decoration: none;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
     }
 
@@ -50,11 +51,22 @@
       a {
         text-decoration: none;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
     }
   }
 
+  @media (max-width: $sm-size){
+    font-size: 10px;
+
+    &--user-img {
+      margin-right: 20px;
+  
+      &__user_image {
+        width: 100px;
+      }
+    }
+  }
 }
 
 
@@ -71,29 +83,182 @@
     justify-content: space-between;
     cursor: pointer;
     padding: 6px 20px;
-    font-size: 2rem;
+    font-size: 2em;
     border-bottom: 2px solid #a7a9ac;
   }
 
   &__content {
     padding: 20px;
+  }
 
-    .item + .item{
-      margin-top: 20px;
-    }
+  &--item + &--item {
+    margin-top: 20px;
+  }
 
-    .name {
-      font-weight: bold;
-      font-size: 1.8rem;
-    }
+  .name {
+    font-weight: bold;
+    font-size: 1.8em;
+  }
 
-    .interval {
-      font-size: 1.4rem;
-      color: #4f90cd;
-    }
+  .interval {
+    font-size: 1.4em;
+    color: #4f90cd;
+  }
+
+  @media (max-width: $sm-size){
+    font-size: 10px;
+  }
+
+}
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.items-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.item {
+  display: none;
+  position: relative;
+  animation: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+.active,
+.next {
+  display: block;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.description {
+  margin: 30px 20%;
+  font-size: 2em;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-name {
+  padding: 10px;
+  width: 400px;
+}
+
+.project-image {
+  cursor: pointer;
+  img {
+    width: 100%;
   }
 }
 
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  cursor: pointer;
+}
+
+.control.left {
+  left: 0;
+  right: auto;
+}
+
+.control.right {
+  right: 0;
+  left: auto;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-btn {
+  transform: rotate(90deg);
+}
+
+.right-btn {
+  transform: rotate(-90deg);
+}
+
+.arrow.right {
+  right: 50%;
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .description {
+    margin: 30px;
+    font-size: 16px;
+  }
+
+  .control {
+    display: none;
+  }
+
+  .description {
+    border: 0;
+  }
+
+
+}
 
 .display {
   display: none;
@@ -105,7 +270,6 @@
     width: 100%;
     height: 100vh;
     border: none;
-    src: url('./theyalow/index.html');
   }
 
   .button {
@@ -128,6 +292,15 @@
     height: 100px;
 
     bottom: 10%;
-    left: 80%;
+    right: 10%;
+  }
+
+  @media (max-width: $sm-size) {
+    &--buttons {
+      &__device {
+        display: none;
+      }
+    }
   }
 }
+

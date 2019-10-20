@@ -388,19 +388,31 @@ template {
 
 .header--info-wrapper__name {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .header--info-wrapper__github a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .header--info-wrapper__other-links a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.5em;
+}
+
+@media (max-width: 375px) {
+  .header {
+    font-size: 10px;
+  }
+  .header--user-img {
+    margin-right: 20px;
+  }
+  .header--user-img__user_image {
+    width: 100px;
+  }
 }
 
 .expansion-wrapper {
@@ -424,7 +436,7 @@ template {
           justify-content: space-between;
   cursor: pointer;
   padding: 6px 20px;
-  font-size: 2rem;
+  font-size: 2em;
   border-bottom: 2px solid #a7a9ac;
 }
 
@@ -432,18 +444,205 @@ template {
   padding: 20px;
 }
 
-.expansion-wrapper__content .item + .item {
+.expansion-wrapper--item + .expansion-wrapper--item {
   margin-top: 20px;
 }
 
-.expansion-wrapper__content .name {
+.expansion-wrapper .name {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.8em;
 }
 
-.expansion-wrapper__content .interval {
-  font-size: 1.4rem;
+.expansion-wrapper .interval {
+  font-size: 1.4em;
   color: #4f90cd;
+}
+
+@media (max-width: 375px) {
+  .expansion-wrapper {
+    font-size: 10px;
+  }
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.items-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.item {
+  display: none;
+  position: relative;
+  -webkit-animation: 0.5s ease-in-out;
+          animation: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+.active,
+.next {
+  display: block;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.description {
+  margin: 30px 20%;
+  font-size: 2em;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-name {
+  padding: 10px;
+  width: 400px;
+}
+
+.project-image {
+  cursor: pointer;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  cursor: pointer;
+}
+
+.control.left {
+  left: 0;
+  right: auto;
+}
+
+.control.right {
+  right: 0;
+  left: auto;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.left-btn {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.right-btn {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.arrow.right {
+  right: 50%;
+}
+
+.to-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+}
+
+.from-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+}
+
+.to-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .description {
+    margin: 30px;
+    font-size: 16px;
+  }
+  .control {
+    display: none;
+  }
+  .description {
+    border: 0;
+  }
 }
 
 .display {
@@ -457,7 +656,6 @@ template {
   width: 100%;
   height: 100vh;
   border: none;
-  src: url("./theyalow/index.html");
 }
 
 .display .button {
@@ -488,6 +686,12 @@ template {
           justify-content: space-between;
   height: 100px;
   bottom: 10%;
-  left: 80%;
+  right: 10%;
+}
+
+@media (max-width: 375px) {
+  .display--buttons__device {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
